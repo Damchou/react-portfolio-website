@@ -16,8 +16,13 @@ class ProjectItem extends Component {
     const project = ProjectAPI.get(this.props.match.params.url);
   }
 
+  handleLink(destination) {
+    window.location.replace(destination);
+  }
+
   render() {
     const project = this.state.project;
+
     if (!project) {
       return <div>No projects found!</div>;
     }
@@ -32,8 +37,18 @@ class ProjectItem extends Component {
           />
           <p>{project.about}</p>
           <p>{project.description}</p>
-          <button>Demo</button>
-          <button>Source</button>
+          <button
+            disabled={!project.demo}
+            onClick={() => this.handleLink(project.demo)}
+          >
+            Demo
+          </button>
+          <button
+            disabled={!project.source}
+            onClick={() => this.handleLink(project.source)}
+          >
+            Source
+          </button>
         </div>
 
         <h2>{project.info}</h2>

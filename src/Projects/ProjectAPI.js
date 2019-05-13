@@ -13,8 +13,8 @@ const ProjectAPI = {
       img3: "img3",
       img4: "img4",
       video: "",
-      demo: null,
-      source: "github",
+      demo: "",
+      source: "https://github.com/Damchou/react-portfolio-website",
       info: "what"
     },
     {
@@ -30,8 +30,8 @@ const ProjectAPI = {
       img3: "img3",
       img4: "img4",
       video: "",
-      demo: null,
-      source: "github",
+      demo: "",
+      source: "https://github.com/Damchou/react-portfolio-website",
       info: "what"
     },
     {
@@ -47,8 +47,8 @@ const ProjectAPI = {
       img3: "img3",
       img4: "img4",
       video: "",
-      demo: null,
-      source: "github",
+      demo: "",
+      source: "https://github.com/Damchou/react-portfolio-website",
       info: "what"
     },
     {
@@ -64,8 +64,8 @@ const ProjectAPI = {
       img3: "img3",
       img4: "img4",
       video: "",
-      demo: null,
-      source: "github",
+      demo: "",
+      source: "https://github.com/Damchou/react-portfolio-website",
       info: "what"
     }
   ],
