@@ -1,10 +1,17 @@
 import React, { Components } from "react";
 import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function Main() {
   return (
-    <div>
-      <p>Main</p>
+    <div className="content">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
     </div>
   );
 }
