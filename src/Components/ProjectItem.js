@@ -12,12 +12,16 @@ class ProjectItem extends Component {
   }
 
   componentDidMount() {
-    this.setState({ project: ProjectAPI.get(this.props.match.params.url) });
     const project = ProjectAPI.get(this.props.match.params.url);
+    this.setState({ project: project, activeImage: project.img1 });
   }
 
   handleLink(destination) {
     window.location.replace(destination);
+  }
+
+  imageClick(clickedImage) {
+    this.setState({ activeImage: clickedImage });
   }
 
   render() {
@@ -33,7 +37,9 @@ class ProjectItem extends Component {
         <div>
           <img
             className="project-active-img"
-            src={require(`../Images/${project.url}/${project.img1}.png`)}
+            src={require(`../Images/${project.url}/${
+              this.state.activeImage
+            }.png`)}
           />
           <p>{project.about}</p>
           <p>{project.description}</p>
@@ -53,10 +59,22 @@ class ProjectItem extends Component {
 
         <h2>{project.info}</h2>
         <div className="project-sub-img">
-          <img src={require(`../Images/${project.url}/${project.img1}.png`)} />
-          <img src={require(`../Images/${project.url}/${project.img2}.png`)} />
-          <img src={require(`../Images/${project.url}/${project.img3}.png`)} />
-          <img src={require(`../Images/${project.url}/${project.img4}.png`)} />
+          <img
+            src={require(`../Images/${project.url}/${project.img1}.png`)}
+            onClick={() => this.imageClick(project.img1)}
+          />
+          <img
+            src={require(`../Images/${project.url}/${project.img2}.png`)}
+            onClick={() => this.imageClick(project.img2)}
+          />
+          <img
+            src={require(`../Images/${project.url}/${project.img3}.png`)}
+            onClick={() => this.imageClick(project.img3)}
+          />
+          <img
+            src={require(`../Images/${project.url}/${project.img4}.png`)}
+            onClick={() => this.imageClick(project.img4)}
+          />
         </div>
       </div>
     );

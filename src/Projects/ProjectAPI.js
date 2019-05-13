@@ -37,7 +37,7 @@ const ProjectAPI = {
     {
       id: 3,
       name: "Example Project 3",
-      tag: "C#",
+      tag: "Java",
       url: "example-project3",
       icon: "example-project3-icon",
       about: "This is About text",
@@ -54,7 +54,7 @@ const ProjectAPI = {
     {
       id: 4,
       name: "Example Project 4",
-      tag: "C#",
+      tag: "PHP",
       url: "example-project4",
       icon: "example-project4-icon",
       about: "This is About text",
