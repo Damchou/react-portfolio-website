@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
+import yourEmailHere from "../Images/yourmailhere.png";
 
 function Contact() {
   return (
-    <div>
-      <h2>Contact me</h2>
+    <div className="background-img-contact">
+      <div className="grid-container">
+        <img className="email-img" src={yourEmailHere} />
+      </div>
     </div>
   );
 }

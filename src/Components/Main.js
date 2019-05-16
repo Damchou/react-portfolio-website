@@ -1,4 +1,4 @@
-import React, { Components } from "react";
+import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";
@@ -6,7 +6,7 @@ import Contact from "./Contact";
 
 function Main() {
   return (
-    <div className="content">
+    <div>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/projects" component={Projects} />
