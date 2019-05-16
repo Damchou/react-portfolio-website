@@ -1,4 +1,12 @@
+# Portfolio Website made in React
+
+This is a work-in-progress project.
+
+I made this site to better showcase my current and upcoming projects. It was also a learning experience. I will add later more features such as tag-filtering and redo the CSS, also make the site responsive.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+---
 
 ## Available Scripts
 
