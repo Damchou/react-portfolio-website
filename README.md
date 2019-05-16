@@ -6,6 +6,14 @@ I made this site to better showcase my current and upcoming projects. It was als
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Preview Images
+
+<img src="previews/preview-projects.png"/>
+<p float="left">
+  <img src="previews/preview-about.png" width="49%"/>
+  <img src="previews/preview-project.png" width="49%"/>
+</p>
+
 ---
 
 ## Available Scripts
