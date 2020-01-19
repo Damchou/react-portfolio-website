@@ -1,14 +1,19 @@
-import React from "react";
-import yourEmailHere from "../Images/yourmailhere.png";
+import React, { Component } from "react";
+import GitHubIcon from "../Images/github-icon.png";
+import ContactImg from "../Images/contact-placeholder-img.png";
 
-function Contact() {
-  return (
-    <div className="background-img-contact">
-      <div className="grid-container">
-        <img className="email-img" src={yourEmailHere} />
+export default class Contact extends Component {
+  render() {
+    return (
+      <div className="contact-bar">
+        <div className="contact-github">
+          <img src={GitHubIcon} />
+        </div>
+        <div className="contact-name">Full Name</div>
+        <div className="contact-email">
+          <img src={ContactImg} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default Contact;
