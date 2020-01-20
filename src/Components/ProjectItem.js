@@ -16,6 +16,10 @@ class ProjectItem extends Component {
     this.setState({ project: project, activeImage: project.img1 });
   }
 
+  handleLink(destination) {
+    window.location.assign(destination);
+  }
+
   imageClick(clickedImage) {
     this.setState({ activeImage: clickedImage });
   }

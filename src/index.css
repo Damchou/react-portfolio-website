@@ -163,6 +163,7 @@ h2 {
 .contact-github > img {
   height: 50px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .contact-name {
