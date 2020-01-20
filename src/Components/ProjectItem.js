@@ -12,7 +12,7 @@ class ProjectItem extends Component {
   }
 
   componentDidMount() {
-    const project = ProjectAPI.get(this.props.url);
+    const project = ProjectAPI.get(this.props.path);
     this.setState({ project: project, activeImage: project.img1 });
   }
 
@@ -34,25 +34,25 @@ class ProjectItem extends Component {
         </div>
         <div className="project-active-img">
           <img
-            src={require(`../Images/${project.url}/${this.state.activeImage}.png`)}
+            src={require(`../Images/${project.path}/${this.state.activeImage}.png`)}
           />
         </div>
         <div className="project-sub-imgs">
           <div className="project-sub-imgs-nested">
             <img
-              src={require(`../Images/${project.url}/${project.img1}.png`)}
+              src={require(`../Images/${project.path}/${project.img1}.png`)}
               onClick={() => this.imageClick(project.img1)}
             />
             <img
-              src={require(`../Images/${project.url}/${project.img2}.png`)}
+              src={require(`../Images/${project.path}/${project.img2}.png`)}
               onClick={() => this.imageClick(project.img2)}
             />
             <img
-              src={require(`../Images/${project.url}/${project.img3}.png`)}
+              src={require(`../Images/${project.path}/${project.img3}.png`)}
               onClick={() => this.imageClick(project.img3)}
             />
             <img
-              src={require(`../Images/${project.url}/${project.img4}.png`)}
+              src={require(`../Images/${project.path}/${project.img4}.png`)}
               onClick={() => this.imageClick(project.img4)}
             />
           </div>

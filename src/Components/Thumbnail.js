@@ -13,7 +13,7 @@ function popup(props) {
         <div>
           <img
             className="projects-item-icon"
-            src={require(`../Images/${props.url}/${props.icon}.png`)}
+            src={require(`../Images/${props.path}/${props.icon}.png`)}
           />
           <div className="projects-item-title">{props.name}</div>
         </div>
@@ -22,7 +22,7 @@ function popup(props) {
     >
       {close => (
         <div className="popup">
-          <ProjectItem url={props.url} />
+          <ProjectItem path={props.path} />
         </div>
       )}
     </Popup>

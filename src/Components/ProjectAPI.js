@@ -4,8 +4,8 @@ const ProjectAPI = {
       id: 1,
       name: "Example Project 1",
       tag: "Javascript",
-      url: "example-project1",
-      icon: "example-project1-icon",
+      path: "example-project1",
+      icon: "icon",
       about: "This is About text",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -23,8 +23,8 @@ const ProjectAPI = {
       id: 2,
       name: "Example Project 2",
       tag: "C#",
-      url: "example-project2",
-      icon: "example-project2-icon",
+      path: "example-project2",
+      icon: "icon",
       about: "This is About text",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -42,8 +42,8 @@ const ProjectAPI = {
       id: 3,
       name: "Example Project 3",
       tag: "Java",
-      url: "example-project3",
-      icon: "example-project3-icon",
+      path: "example-project3",
+      icon: "icon",
       about: "This is About text",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -61,8 +61,8 @@ const ProjectAPI = {
       id: 4,
       name: "Example Project 4",
       tag: "PHP",
-      url: "example-project4",
-      icon: "example-project4-icon",
+      path: "example-project4",
+      icon: "icon",
       about: "This is About text",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -80,8 +80,8 @@ const ProjectAPI = {
       id: 5,
       name: "Example Project 5",
       tag: "Unity",
-      url: "example-project5",
-      icon: "example-project5-icon",
+      path: "example-project5",
+      icon: "icon",
       about: "This is About text",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -99,8 +99,8 @@ const ProjectAPI = {
       id: 6,
       name: "Example Project 6",
       tag: "Python",
-      url: "example-project6",
-      icon: "example-project6-icon",
+      path: "example-project6",
+      icon: "icon",
       about: "This is About text",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -118,8 +118,8 @@ const ProjectAPI = {
       id: 7,
       name: "Example Project 7",
       tag: "C++",
-      url: "example-project7",
-      icon: "example-project7-icon",
+      path: "example-project7",
+      icon: "icon",
       about: "This is About text.",
       short:
         "This is a short and brief description of this project. But nothing prevents a longer one, though!",
@@ -137,8 +137,8 @@ const ProjectAPI = {
   all: function() {
     return this.projects;
   },
-  get: function(id) {
-    const isProject = p => p.url === id;
+  get: function(path) {
+    const isProject = p => p.path === path;
     return this.projects.find(isProject);
   }
 };

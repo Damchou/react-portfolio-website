@@ -7,7 +7,7 @@ export default function ProjectGrid() {
     <div className="main-container">
       <div className="projects">
         {ProjectAPI.all().map(p => (
-          <Thumbnail key={p.id} icon={p.icon} url={p.url} name={p.name} />
+          <Thumbnail key={p.id} icon={p.icon} path={p.path} name={p.name} />
         ))}
       </div>
     </div>
