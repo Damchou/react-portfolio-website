@@ -2,16 +2,16 @@
 
 This is a work-in-progress project.
 
-I made this site to better showcase my current and upcoming projects. It was also a learning experience. I will add later more features such as tag-filtering and redo the CSS, also make the site responsive.
+I made this site to better showcase my current projects. It is also a learning experience. I will add later more features such as tag-filtering and also make the site more responsive.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Preview Images
 
-<img src="previews/preview-projects.png"/>
-<p float="left">
-  <img src="previews/preview-about.png" width="49%"/>
-  <img src="previews/preview-project.png" width="49%"/>
+<img src="previews/preview1.png"/>
+<img src="previews/preview2.png"/>
+<p align="center">
+  <img src="previews/preview3.png"/>
 </p>
 
 ---
